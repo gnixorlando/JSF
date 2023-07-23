@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" lang="pt-BR">
+<f:view>
+    <ui:composition template="/resources/components/common-layout.xhtml">
+        <ui:define name="head">
+            <title>Página 01</title>
+            <meta name="description" content="Aplicação modelo utilizanod JSF."/>
+        </ui:define>
+        <ui:define name="metadata">
+            <f:metadata>
+                <f:viewAction action="#{beanController.initializer()}"/>
+            </f:metadata>
+        </ui:define>
+
+        <ui:define name="content">
+            <h1>Good Morning,  Welcome #{beanController.name}</h1>
+        </ui:define>
+    </ui:composition>
+</f:view>
+</html>

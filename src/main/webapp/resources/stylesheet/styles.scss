@@ -1,0 +1,15 @@
+html {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+
+  &.teste {
+   font-size: 3rem;
+  }
+
+  &.teste-2 {
+    font-size: 1rem;
+  }
+}
